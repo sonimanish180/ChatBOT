@@ -1,0 +1,74 @@
+.code-editor-container {
+    display: flex;
+    flex-direction: column;
+
+    .code-editor-header {
+        flex-basis: 6%;
+        border-bottom: 1px solid transparentize($color: $hr_gray1, $amount: 0.85);
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .button {
+            min-width: 125px
+        }
+        .tabContainer {
+            display: flex;
+            max-width: 450px;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            padding: 4px;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                display: none;
+              }
+            .main-tab-title {
+                font-size: 12px;
+                font-weight: 500;
+                height: 100%;
+                display: flex;
+                align-items: center;          
+                border-top: 1px solid transparentize($color: $hr_gray1, $amount: 0.85);
+                border-right: 1px solid transparentize($color: $hr_gray1, $amount: 0.85);
+                border-left: 1px solid transparentize($color: $hr_gray1, $amount: 0.85);
+                border-radius: 4px;
+
+                p {
+                    margin: 0 8px;
+                }
+                
+                .close-tab {
+                    cursor: pointer;
+                    padding: 2px;
+                    margin-right: 4px;
+                    font-size: 16px;
+                }
+            }
+            .add-tab {
+                border: none;
+                background: none;
+                outline: none;
+                font-size: 16px;
+                font-weight: 500;height: 100%;
+                display: flex;
+                align-items: center;               
+                border-radius: 4px;
+                p {
+                    margin: 0 8px;
+                    color : $hr_fontColor1;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+                &:focus {     
+                    border: 1px solid white;
+                    // border-bottom: 1px solid $hr_fontColor1;
+                    // border-right: 1px solid $hr_fontColor1;
+                    // border-left: 1px solid $hr_fontColor1;
+                }
+            }
+        }
+    }
+}

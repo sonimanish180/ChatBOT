@@ -12,7 +12,7 @@ const Header = () => {
                 <a href="/">Docs</a>
                 <Avatar src="https://reqres.in/img/faces/2-image.jpg" />
                 <a style={{margin:"0 4px 0 0"}} href="/">Account</a>
-                <IoIosArrowDown style={{color:"$hr_fontColor1"}} />
+                <IoIosArrowDown />
             </div>
         </header>
     );

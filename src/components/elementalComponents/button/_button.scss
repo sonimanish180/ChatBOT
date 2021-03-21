@@ -1,11 +1,24 @@
 .button {
     border: none;
     outline: none;
-    padding: 8px;
-    border-radius: 24px;
-    font-weight: 600;
-    
+    padding: 6px;
+
+    border-radius: 4px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    background: $hr_gray2;
+    font-size: 12px;
+    font-weight: 500;
+    color: $hr_fontColor1;
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 8px;
+    }
     &:hover{
         cursor: pointer;
     }    
+    &:focus {
+        border: 1px solid $hr_fontColor1;
+    }
 }
