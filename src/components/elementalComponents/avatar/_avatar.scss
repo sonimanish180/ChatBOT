@@ -1,0 +1,13 @@
+.avatar {
+    height: 64px;
+    width: 64px;
+    border-radius: 36px;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    .image {
+        height: 48px;
+        width: 48px;
+        border-radius: 36px; 
+    }
+}

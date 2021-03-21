@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.ai-playground {
+    height: 100vh;
+    background: $hr_background;
+    display: flex;
+    flex-direction: column;
+    .header-container {
+        flex-basis: 8%;;
+        display: flex;
+        align-items: center;      
+        padding: 0 24px;
+        border-bottom: 0.2px solid transparentize($color: $hr_gray1, $amount: 0.8);
+    }
+    .body-container {
+        flex-basis: 92%;
+    }
+}
